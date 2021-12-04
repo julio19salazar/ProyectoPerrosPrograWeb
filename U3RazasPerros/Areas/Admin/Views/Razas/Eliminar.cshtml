@@ -1,0 +1,40 @@
+﻿@model U3RazasPerros.Models.Razas
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment env
+@{ ViewData["Title"] = "Eliminar";
+                Layout = "_LayoutAdmin"; }
+
+<h1>Eliminar la raza</h1>
+
+<form method="post" asp-area="Admin" asp-controller="Razas" asp-action="Eliminar">
+    <p style="display: block;  font-size: 25px; padding: 3PX; margin: 0;">¿Seguro de eliminar  la raza <b>@(Model.Nombre)</b>?</p><br />
+    <div id="crudM">
+
+
+        @if (System.IO.File.Exists($"{env.WebRootPath}/imgs_perros/{Model.Id}_0.jpg"))
+        {
+<img id="imagePreview" src="~/imgs_perros/@(Model.Id)_0.jpg" alt="Vista previa de la imagen"> }
+else
+{
+<img id="imagePreview" src="~/imgs/nophoto2.png" alt="Vista previa de la imagen">}
+    </div>
+
+    <input asp-for="Nombre" value="@(Model.Nombre)" hidden />
+    <input asp-for="Id" value="@(Model.Id)" hidden />
+    <div class="botones">
+        <p id="error">
+            @Html.ValidationSummary()
+        </p>
+        <input type="submit" value="✔" style=" margin-left:200px; float:left; width:200px; height:40px;  background-color: saddlebrown; color:green">
+        <a href="~/Admin/Razas" style=" line-height:35px; width:200px; height:35px; display:block; text-align:center; text-decoration:none; background-color: saddlebrown; color: white; padding: 5px; border: 1px solid black; float:right; margin-right:200px; ">
+            ❌
+        </a>
+    </div>
+    <p>
+        @Html.ValidationSummary()
+    </p>
+
+</form>
+<br class="clear" />
+
+

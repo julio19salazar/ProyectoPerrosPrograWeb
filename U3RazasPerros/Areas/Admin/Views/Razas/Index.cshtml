@@ -1,0 +1,57 @@
+﻿@model IEnumerable<U3RazasPerros.Models.Razas>
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment env
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutAdmin";
+}
+
+<h1>Administrar las razas</h1>
+<section class="listado">
+<a id="lnkNueva" class="mark" href="~/Admin/Razas/Agregar">
+        <h1>Nuevo Raza...</h1>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <div class="image">
+            <img src="~/imgs/nuevoperro.png" />
+        </div>
+        <h2></h2>
+        <h2></h2>
+        <div class="botones">
+            <img src="~/imgs/Agregar.png" />
+        </div>
+    </a>
+    </section>
+
+<section class="list" id="listAdm">
+    <ul>
+        @foreach (var r in Model)
+        {
+            <li>
+                <div>
+                    @if (System.IO.File.Exists($"{env.WebRootPath}/imgs_perros/{r.Id}_0.jpg"))
+                    {
+                        <img src="~/imgs_perros/@(r.Id)_0.jpg" />
+                    }
+                    else
+                    {
+                        <img src="~/imgs/nophoto2.png" />
+                    }
+
+                    <b>Nombre: </b>@r.Nombre<br>
+                    @*<b>Esperanza: </b>@(r.EsperanzaVida) años<br>
+        <b>Peso: </b>@(r.PesoMin)kg <b>-</b> @(r.PesoMax)kg<br>
+        <b>Altura: </b>@(r.AlturaMin)cm <b>-</b> @(r.AlturaMax)cm*@
+                    <div class="botones">
+                        <a href="~/Admin/Razas/Modificar/@(r.Id)" class="btnEditar">✏️ Editar</a>
+                        <a href="~/Admin/Razas/Eliminar/@(r.Id)" class="btnBorrar">🗑️Eliminar</a>
+                    </div>
+                </div>
+
+            </li>
+        }
+    </ul>
+    <br class="clear" />
+</section>
+<!

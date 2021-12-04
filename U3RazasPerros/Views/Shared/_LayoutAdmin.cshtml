@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/estilos.css" rel="stylesheet" />
+    <title>Razas de Perros</title>
+</head>
+
+<body>
+    <header>
+        <h1>Administrador</h1>
+    </header>
+    <main>
+        <nav style="margin-top:-14px;">
+            <a style=" line-height:35px; width:200px; height:35px; display:block; text-align:center; text-decoration:none; background-color: saddlebrown; color: white; padding: 5px; border: 1px solid black; float:left; margin-right:20px; " href="~/Admin">Principal</a>
+            <a style=" line-height:35px; width:200px; height:35px; display:block; text-align:center; text-decoration:none; background-color: saddlebrown; color: white; padding: 5px; border: 1px solid black; float:left; " href="~/Admin/Razas">Administrar Razas</a>
+        </nav>
+        <br /><br />
+        @RenderBody()
+    </main>
+    <footer>
+        Razas de Perros - Ejercicio de Programación Web
+    </footer>
+</body>
+</html>

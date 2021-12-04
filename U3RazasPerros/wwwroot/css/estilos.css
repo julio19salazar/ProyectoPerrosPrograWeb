@@ -1,0 +1,382 @@
+﻿
+#listAdm li {
+    height: 220px;
+}
+
+    #listAdm li img {
+        width: 220px;
+    }
+
+
+html, body {
+    background-color: #ffc82f;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body
+{
+    height:auto;
+}
+main h1 {
+    text-align: center;
+}
+stado h1, .listado h2 {
+    margin: 0;
+    text-align: left;
+    height: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 45px 0 5px;
+    line-height: 25px;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(to bottom, #55ab00 1%,#458a01 50%, #55ab00 100%);
+}
+/*.listado
+{
+    height:100px;
+    width:200px;
+}*/
+.listado .mark h1 {
+    color: yellow;
+    background-color: saddlebrown;
+}
+.listado .botones {
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+    .listado .botones input, .listado .botones a {
+        display: block;
+        float: left;
+        width: 21px;
+        height: 21px;
+        margin: 2px;
+        border: 0;
+        background-size: contain;
+    }
+
+
+
+
+
+    .mark
+    {
+        height:187.5px;
+    }
+    .card
+    {
+        width:200px;
+    }
+
+
+.listado a, .listado .card {
+    border: 2px solid black;
+    width: 300px;
+    display: block;
+    margin: 0 5px 5px 0;
+    float: left;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+.listado h1, .listado h2 {
+    margin: 0;
+    text-align: left;
+    height: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 45px 0 5px;
+    line-height: 25px;
+    overflow: hidden;
+    color: white;
+    background:Black;
+}
+
+.listado .mark h1 {
+    color: white;
+}
+
+.listado h2 {
+    background: none;
+    color: darkgray;
+    font-weight: normal;
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+    .listado h2[title] {
+        height: 30px;
+    }
+
+.listado .image {
+    width: 284px;
+    height: 94px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.listado img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.listado .botones {
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+    .listado .botones input, .listado .botones a {
+        display: block;
+        float: left;
+        width: 21px;
+        height: 21px;
+        margin: 2px;
+        border: 0;
+        background-size: contain;
+    }
+
+header {
+    height: 80px;
+    width: 800px;
+    margin: 5px auto;
+    color: saddlebrown;
+    background: url(../imgs/logo.png) no-repeat;
+    background-size: contain;
+}
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50pt;
+        margin-left: 160px;
+        text-align: center;
+    }
+
+
+main, .main, #main {
+    margin: 10px auto;
+    width: 990px;
+    display: block;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 30px;
+    font-family: Tahoma;
+}
+
+.nav {
+    height: 40px;
+    border-bottom: 1px solid #247eb0;
+    margin:auto;
+}
+
+    .nav h2 {
+        color: #247eb0;
+        margin: 5px 0;
+        float: left;
+        width: 300px;
+    }
+
+    .nav ul {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .nav ul li {
+            float: left;
+        }
+
+            .nav ul li a {
+                display: block;
+                padding:0 5px;
+                height: 30px;
+                background-color: #247eb0;
+                color: white;
+                margin: 0 5px;
+                font-family: Tahoma;
+                font-size: 12pt;
+                text-align: center;
+                line-height: 30px;
+                text-decoration: none;
+            }
+
+
+.list {
+    margin: 15px 0;
+}
+
+    .list ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .list li {
+        width: 150px;
+        float: left;
+        margin: 0 18px 18px 0;
+        height: 130px;
+        text-align: center;
+    }
+
+        .list li:nth-child(6n) {
+            margin-right: 0;
+        }
+
+    .list a {
+        text-decoration: none;
+        color: #247eb0;
+        font-size: 10pt;
+    }
+
+    .list li img {
+        background-color: #ffc82f;
+        width: 150px;
+        max-width: 140px;
+        max-height: 80px;
+        overflow: hidden;
+        border: 5px solid white;
+        outline: 2px solid gainsboro;
+    }
+
+footer {
+    background-color: #f1b30f;
+    height: 50px;
+    border-top: 1px groove lightgray;
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+    line-height: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+main >  h2 {
+    border-radius: 10px;
+    background-color: #247eb0;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.descripcion {
+    width: 500px;
+    height: auto;
+    float: left;
+    margin: 5px 0;
+    text-align: justify;
+    overflow: auto;
+    padding: 0 10px 0 0;
+}
+
+
+.galeria {
+    float: right;
+    width: 450px;
+    overflow:hidden;
+    margin: 5px 0;
+}
+
+    .galeria img {
+        background-color: #ffc82f;
+        max-width: 100%;
+    }
+
+
+.datos, .estadisticas, .fisicas {
+    float: left;
+    width: 320px;
+    margin: 0 20px;
+    font-size: small;
+}
+
+.datos, .fisicas {
+    width: 220px;
+}
+
+
+.estadisticas {
+    width: 420px;
+}
+
+section label {
+    color: #247eb0;
+    font-weight: bold;
+}
+
+
+section span {
+    width: 170px;
+    height: 30px;
+}
+
+.estadisticas img {
+    width: 220px;
+    height: 15px;
+    float: right;
+}
+
+main .button {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #247eb0;
+    color: white;
+    margin: 5px auto;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 120px;
+    display: block;
+}
+
+.otrosPerros {
+    margin-top: 40px;
+    font-size: smaller;
+}
+
+    .otrosPerros h2 {
+        font-size: smaller;
+        border-radius: 0;
+        margin: 2px 0;
+    }
+
+    .otrosPerros a {
+        display: block;
+        width: 230px;
+        float: left;
+        margin-right: 17px;
+        text-decoration: none;
+        color: black;
+        height: 200px;
+        overflow: hidden;
+    }
+
+        .otrosPerros a:last-child {
+            margin: 0;
+        }
+
+        .otrosPerros a img {
+            width: 100%;
+        }
+
